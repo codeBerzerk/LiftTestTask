@@ -1,0 +1,49 @@
+.header {
+  width: 768px;
+  margin: 0 auto;
+  height: 90px;
+  background-image: url('../../public/header-background.png');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.uiContainer {
+  margin-top: 16px;
+  width: 528px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.backButton {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.progressPercentage {
+  margin-left: 400px;
+}
+
+.menuButton {
+  cursor: pointer;
+}
+
+.progressBarContainer {
+  margin-top: 10px;
+  width: 528px;
+  background-color: white;
+  height: 4px;
+  border-radius: 2px;
+  box-shadow: 0 2px 6px 0 #0000000D;
+
+}
+
+.progressBar {
+  height: 100%;
+  background: linear-gradient(270deg, #4AD6BB 0%, #38A58F 100%);
+  transition: width 0.3s ease-in-out;
+}
+

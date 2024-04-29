@@ -1,0 +1,21 @@
+.continueButton {
+  background-color: #4AD6BB;
+  color: white;
+  width: 100%;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.5s all;
+  box-shadow: 0 3px 6px 0 #00000008;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+
+  &:disabled {
+    opacity: 50%;
+    cursor: default;
+    transition: 0.5s all;
+  }
+}

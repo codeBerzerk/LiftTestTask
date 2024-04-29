@@ -1,0 +1,40 @@
+.answerOption {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  cursor: pointer;
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 40px;
+  border: 1px solid #D7DCDF;
+  border-radius: 8px;
+}
+
+.radioInput {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  cursor: pointer;
+}
+
+.emoji {
+  margin-right: 16px;
+}
+
+.uncheked {
+  position: absolute;
+  right: 40px;
+}
+
+.checkmark {
+  position: absolute;
+  right: 40px;
+
+}
+
+.selected {
+  border: 2px solid #40BCA3;
+}
