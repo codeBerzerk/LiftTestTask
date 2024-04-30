@@ -49,6 +49,7 @@ const IndexPage = () => {
         console.error("Search error:", error);
         setErrorMessage(error); // Зберігання повідомлення про помилку
         setStep(4);
+        ProgressContext(prevProgress => prevProgress + 50);
     };
 
     return (
