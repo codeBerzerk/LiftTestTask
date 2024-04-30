@@ -19,3 +19,9 @@
     transition: 0.5s all;
   }
 }
+
+@media (max-width: 768px) {
+  .continueButton {
+    width: 94%;
+  }
+}

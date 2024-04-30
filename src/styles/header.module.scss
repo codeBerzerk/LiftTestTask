@@ -1,5 +1,6 @@
 .header {
-  width: 768px;
+  width: 100%;
+  max-width: 768px;
   margin: 0 auto;
   height: 90px;
   background-image: url('../../public/header-background.png');
@@ -12,38 +13,51 @@
 
 .uiContainer {
   margin-top: 16px;
-  width: 528px;
+  width: 70%;
   display: flex;
   justify-content: space-between;
 }
 
-.backButton {
+.backButton, .menuButton {
   border: none;
   background-color: transparent;
   cursor: pointer;
 }
 
-.progressPercentage {
-  margin-left: 400px;
-}
-
-.menuButton {
-  cursor: pointer;
-}
 
 .progressBarContainer {
   margin-top: 10px;
-  width: 528px;
+  width: 70%; // Ширина прогрес-бару стає гнучкою
   background-color: white;
   height: 4px;
   border-radius: 2px;
-  box-shadow: 0 2px 6px 0 #0000000D;
-
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.4);
 }
 
 .progressBar {
+  border-radius: 2px;
   height: 100%;
   background: linear-gradient(270deg, #4AD6BB 0%, #38A58F 100%);
   transition: width 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .header {
+    height: auto;
+  }
+
+  .uiContainer {
+    align-items: center;
+  }
+
+  .progressPercentage {
+    position: static;
+    transform: none;
+    margin: 10px 0;
+  }
+
+  .progressBarContainer {
+    width: 100%;
+  }
 }
 

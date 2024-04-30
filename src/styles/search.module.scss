@@ -1,19 +1,26 @@
 .movieContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 30vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 30vh;
+}
+
+@media (max-width: 768px) {
+  .movieContainer {
+    width: 90%;
+  }
 }
 
 .movieInput {
   height: 64px;
-  width: 90%;
-  padding-left: 24px;
+  width: calc(100% - 16px);
+  padding: 0 0 0 16px;
   font-family: 'Noto Sans', sans-serif;
-font-size: 16px;
+  font-size: 16px;
   border: 1px solid #D7DCDF;
-    border-radius: 8px;
+  border-radius: 8px;
 }
 
 .movieButton {
