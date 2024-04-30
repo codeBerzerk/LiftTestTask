@@ -60,4 +60,7 @@
     width: 100%;
   }
 }
-
+.disabledBackButton {
+  cursor: default;
+  opacity: 50%;
+}

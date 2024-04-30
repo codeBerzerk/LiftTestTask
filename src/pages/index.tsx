@@ -35,6 +35,11 @@ const IndexPage = () => {
             setStep(1);
         }
     }
+
+    const tryAgain = () => {
+        setStep(2);
+        ProgressContext(50);
+    }
     const handleSelectGenre = (genre: React.SetStateAction<string>) => {
         setSelectedGenre(genre);
     };
@@ -54,7 +59,7 @@ const IndexPage = () => {
 
     return (
         <div className={styles.appContainer}>
-            <Header progress={progress} onBackClick={handleBackClick}/>
+            <Header progress={progress} onBackClick={handleBackClick} step={step}/>
                 <div className={styles.mainContent}>
                     {step === 1 && (
                     <>
@@ -103,7 +108,7 @@ const IndexPage = () => {
                         <div style={{ textAlign: 'center', marginTop: '1rem' }}>
                             <p style={{fontSize: '135px'}}>🤦‍♀️</p>
                             <h1>Oops, no movie found</h1>
-                            <button className={styles.continueButton} onClick={() => setStep(2)}>Try Again</button>
+                            <button className={styles.continueButton} onClick={() => tryAgain()}>Try Again</button>
                         </div>
                     )}
                 </div>
